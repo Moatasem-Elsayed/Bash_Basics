@@ -11,7 +11,7 @@
 
 
 declare -a example_array=( "Welcome" "To" "Javatpoint" )
- 
+
 #printing the element with index of 2
 echo "Array" 
 echo ${example_array[2]}
