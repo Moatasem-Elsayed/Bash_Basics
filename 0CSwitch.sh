@@ -1,13 +1,16 @@
-#~/bin/bash
+#!/bin/bash
 
-echo "Do you know me ?"
-read -p "Anser is " Answer
+echo "Do you know me?"
+read -p "Answer is " Answer
 
-case $Answer in 
-yes|yes|y|y)
-echo "True"
-;;
-No|no|N|n)
-echo "False"
-;;
+case "$Answer" in
+  yes|YES|y|Y)
+    echo "True"
+    ;;
+  no|NO|n|N)
+    echo "False"
+    ;;
+  *)
+    echo "Invalid answer"
+    ;;
 esac
